@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="25dp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/signature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:textStyle="italic"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/dynamic_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <GridLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dynamic_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="-4.5dp"
+        android:paddingRight="-4.5dp"
+        android:columnCount="3">
+
+        <com.example.npucommunity.fragmentDynamic.SquareImageView
+            android:layout_width="0dp"
+            android:layout_margin="4dp"
+            android:scaleType="centerCrop"
+            android:layout_columnWeight="1"
+            tools:src="@android:color/black" />
+
+        <com.example.npucommunity.fragmentDynamic.SquareImageView
+            android:layout_width="0dp"
+            android:layout_margin="4dp"
+            android:scaleType="centerCrop"
+            android:layout_columnWeight="1"
+            tools:src="@android:color/black" />
+
+        <com.example.npucommunity.fragmentDynamic.SquareImageView
+            android:layout_width="0dp"
+            android:layout_margin="4dp"
+            android:scaleType="centerCrop"
+            android:layout_columnWeight="1"
+            tools:src="@android:color/black"/>
+
+
+    </GridLayout>
+
+</LinearLayout>
